@@ -1,0 +1,256 @@
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    background-color: rgb(70, 6, 32);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.teextoheader{
+    font-size: 12px;
+    background-color: black;
+}
+
+.textounderheader{
+    font-size: 12px;
+    padding: 10px
+}
+
+.letracursiva {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: white;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.tela {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+}
+
+.ContainerTitulo{
+    height: 10vh;
+    width: 80vh;
+    background-color: rgb(70, 6, 32);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+
+.ContainerTexto {
+    height: 30vh;
+    width: 80vh;
+    background-color: rgb(148, 14, 70);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.ContainerImagemTexto {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    padding: 2px;
+}
+
+.ContainerImagem {
+    height: 40%;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+}
+
+.ContainerImagem img {
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    
+}
+
+/* botão ocupa os 40% restantes na esquerda */
+.ContainerImagem .imagem-btn {
+    flex: 0 0 20%;
+    align-self: center;
+    margin-left: 10px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(68, 6, 32);
+}
+
+.ContainerImagem .imagem-btn:hover {
+    background-color: rgb(54, 38, 46);
+}
+
+.ContainerTexto:hover {
+    transform: scale(1.1);
+}
+
+.Teexto{
+    font-size: small;
+    text-align: justify;
+}
+
+.Teexto h1,
+.Teexto h3 {
+    transition: transform 0.3s ease;
+}
+
+.Teexto h1:hover,
+.Teexto h3:hover {
+    transform: scale(1.1);
+}
+
+/* Cores */
+.um {
+     height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 100px;
+    align-items: center;
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    background-color: rgb(56, 4, 21);;
+    background-size: cover;
+    background-position: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.imagem {
+    background-image: url('sayangblur.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.verde {
+    background-color: #4b0413;
+}
+
+.ContainerTextoGrande {
+    width: 80%;
+    height: auto;
+    background-color: rgba(70, 6, 32, 0.8);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 20px rgba(148, 14, 70, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    overflow-y: auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.ContainerTextoGrande h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Great Vibes', cursive;
+}
+
+.ContainerTextoGrande p {
+    text-align: justify;
+    width: 100%;
+}
+
+.photo-container {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.dias .ContainerTextoGrande {
+    height: auto;
+    max-height: fit-content;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.love{
+background-color:#360210;
+}
+
+.coisas{
+background-color:#360210;
+}
+
+.music{
+background-color:#360210;
+}
+
+.momentos{
+background-color:#360210;
+}
+
+.dias{
+background-color:#360210;
+}
+
+.final{
+background-color:rgb(70,6,32);
+font-family:'Great Vibes', cursive;
+}
